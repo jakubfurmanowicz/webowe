@@ -1,11 +1,20 @@
+:root
+{
+    --dark: #203040;
+    --light: #E0E0E0;
+    --accent: #f020c0;
+}
+
 body
 {
-    background: #203040;
-    color: #E0E0E0;
+    background: var(--dark);
+    color: var(--light);
     font-family: Arial;
 }
 
 h1
 {
-    color: #f020c0;
+    color: var(--accent);
+    margin-left: 200px;
+    width: calc(50% - 100px);
 }
