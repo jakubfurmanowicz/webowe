@@ -36,3 +36,4 @@ A tak z cytatami:
 
 > Proszę pana, mi nie działa
 
+![Tekst alternatywny](images/capybara.gif)
