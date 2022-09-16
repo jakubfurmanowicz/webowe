@@ -1,0 +1,11 @@
+.mainImage
+{
+    background-image: url(wallpaper.jfif);
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.filmIcon
+{
+    width: 10%;
+}
