@@ -9,3 +9,12 @@
 {
     width: 10%;
 }
+
+button
+{
+    background-color: mediumturquoise;
+    border: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
