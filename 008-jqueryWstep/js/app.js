@@ -36,4 +36,28 @@ $(document).ready(function(){
         $(this).fadeOut(300);
     });
 
+    $(".btn-who").click(function(){
+
+        // Pobranie tekstu
+        let name = $(this).text();
+
+        // Ustawienie tekstu
+        $("#who").text(name);
+    });
+
+    $(".btn-quote").click(function(){
+
+        let quote = $(this).attr("data-quote");
+
+        $("#quote").text(quote);
+    });
+
+    $(".btn-close").click(function(){
+        $(this).parent().hide(); 
+    });
+
+    $(".btn-test").click(function(){
+        let color = $(this).attr("data-color");
+        $("#tester").css("color", color);
+    });
 });
