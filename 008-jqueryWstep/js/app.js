@@ -60,4 +60,13 @@ $(document).ready(function(){
         let color = $(this).attr("data-color");
         $("#tester").css("color", color);
     });
+
+    $(".btn-profile").mouseover(function(){
+        let newSrc = $(this).attr("data-src");
+        $("#profile").attr("src", newSrc);
+    });
+
+    $(".btn-profile").mouseout(function(){
+        $("#profile").attr("src", "images/blank.png")
+    });
 });
