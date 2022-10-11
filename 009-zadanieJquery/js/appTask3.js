@@ -66,7 +66,7 @@ $(document).ready(function(){
         }
         
     });
-
+    
     $(".changeTextColor").click(function()
     {
         let textColor = $(this).val();
