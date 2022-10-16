@@ -23,17 +23,17 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="jquery/"></script>
+    <script src="jquery/jquery.min.js"></script>
     <script src="js/app.js"></script>
   </head>
   <body>
     <div class="container-fluid bg-primary text-light p-5 h-50 backgroundImage">
       <h1 class="m-5 text-center">Formula 1</h1>
     </div>
-    <nav class="navbar navbar-expand-sm bg-light">
-      <div class="container-fluid mx-auto w-50">
+    <nav class="navbar navbar-expand-sm bg-dark ">
+      <div class="container-fluid w-50">
         <!-- Links -->
-        <ul class="navbar-nav mx-auto w-50">
+        <ul class="navbar-nav mx-auto ">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Start</a>
           </li>
@@ -44,11 +44,65 @@
             <a class="nav-link" href="serieJuniorskie.html">Serie juniorskie</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tory</a>
+            <a class="nav-link" href="formaty.html">Tory</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="container"></div>
+    <div class="container w-75">
+      <h1 class="container w-75">Poszczególne serie juniorskie</h1>
+      <p class="mb-5 mt-3 container w-75">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi commodi vero adipisci suscipit repudiandae sed, id, officia expedita repellat accusantium sint. Nulla, corrupti dolore! Illo quam necessitatibus itaque totam reprehenderit.</p>
+      <!-- <div class="container w-75">
+        <div class="row no-gutters">
+          <div class="col-md-auto">
+            <button type="button" class="btn btn-f2Info btn-primary ps-5 pe-5">Formuła 2</button>
+          </div>
+          <div class="col-md-auto">
+            <button type="button" class="btn btn-f3Info btn-primary ps-5 pe-5">Formuła 3</button>
+          </div>
+          <div class="col-md-auto">
+            <button type="button" class="btn btn-f4Info btn-primary ps-5 pe-5">Formuła 4</button>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="container w-75 mx-auto">
+        <table class="table table-bordered w-50 m-0">
+          <tbody>
+            <tr>
+              <td class="coverBtn1 bg-secondary text-light">
+                <button type="button" class="btn btn-f2Info text-light p-2">Formuła 2</button> 
+              </td>
+              <td class=" coverBtn2 bg-secondary text-light">
+                <button type="button" class="btn btn-f3Info text-light p-2">Formuła 3</button>
+              </td>
+              <td class="coverBtn3 bg-secondary text-light">
+                <button type="button" class="btn btn-f4Info text-light p-2">Formuła 4</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container w-75 mx-auto">
+        <div class="container text-light bg-primary mx-auto  p-3" style="display: none;" id="showF2Info">
+          <h5>Nazywana w skrócie F2, to druga w kolejności klasa wyścigów samochodowych, również o otwartym nadwoziu. Działa z przerwami – w latach 1948-1984, 2009-2012 oraz od 2017 r. Jest swoistą drabinką rozwoju dla młodych kierowców. Zawodnicy występują w niej tylko przez 4 lata, a najlepsi przechodzą do F1. Niższy poziom rozgrywek ma szerokie grono fanów, którzy uważają, że jest on znacznie bardziej emocjonujący, a przede wszystkim zaskakujący dla widzów. Typerzy zaś doceniają możliwość poznania i sprawdzenia możliwości kierowców, którzy mają szansę w kolejnych sezonach sięgnąć po mistrzostwo F1.</h5>
+          <img src="images/f2.jpg" class="container w-100 mt-3 mx-auto" alt="">
+        </div>
+        <div class="container text-light bg-primary mx-auto  p-3" style="display: none;" id="showF3Info">
+          <h5>Formuła 3 (skrót F3) – klasa wyścigów samochodowych przeprowadzanych w różnych cyklach w Europie, Australii, Ameryce Południowej i Azji. Jest to jednocześnie określenie biorących w nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu. Wielu kierowców prestiżowych wyścigów Formuły 1 ma za sobą etap w Formule 3. Udział w wyścigach Formuły 3 jest stosunkowo drogi (miejsce w brytyjskiej F3 kosztuje obecnie około 400 000 funtów szterlingów za udział w rocznym cyklu wyścigów, w Azji cena wynosi około 80 000 funtów). Z tego powodu w wyścigach Formuły 3 biorą udział głównie początkujący zawodowcy, a nie amatorzy. Sukces w F3 może zaowocować dla kierowcy udziałem w wyścigach wyższej klasy, takich jak Formuła 2, Formuła Renault 3.5 lub nawet wyścigów testowych Formuły 1.</h5>
+          <img src="images/f3.jpg" class="container w-100 mt-3 mx-auto"></img>
+        </div>
+        <div class="container text-light bg-primary mx-auto p-3" style="display: none;" id="showF4Info">
+          <h5>Formuła 4 – otwarta klasa wyścigów samochodowych przeznaczona dla młodych kierowców. Zbiór zasad i specyfikacji, na podstawie których poszczególne kraje mogą organizować własne mistrzostwa.</h5>
+          <img src="images/f4.jpg" class="container w-100 mt-3 mx-auto pb-5"></img>
+        </div>
+      </div>
+
+      
+      
+
+
+    </div>
   </body>
 </html>
