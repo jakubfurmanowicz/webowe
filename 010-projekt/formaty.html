@@ -23,7 +23,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="jquery/"></script>
+    <script src="jquery/jquery.min.js"></script>
     <script src="js/app.js"></script>
   </head>
   <body>
@@ -51,24 +51,40 @@
         </ul>
       </div>
     </nav>
+
     <div class="container">
-      <h1 class="container w-75">Co to jest F1?</h1>
-      <p class="container w-75 h5">
-        <strong>Formuła 1</strong> (inaczej Mistrzostwa Świata Rajdów Formuły 1,
-        oficjalny skrót F1) – przeprowadzany regularnie (corocznie) od 1950 roku
-        cykl najbardziej prestiżowych międzynarodowych wyścigów samochodowych,
-        znany również jako wyścigi Grand Prix, a jednocześnie klasa biorących w
-        nich udział jednomiejscowych samochodów wyścigowych o otwartym nadwoziu.
-        Dyscyplina sportu zapoczątkowana w Europie, obecnie o zasięgu globalnym,
-        organizowana w Europie, Ameryce Południowej, Ameryce Północnej, Azji i
-        Australii. Podczas danego sezonu odbywa się od kilkunastu do dwudziestu
-        kilku wyścigów, poszczególnych grand prix, na wydzielonych torach
-        ulicznych i na specjalnie stworzonych do tego celu torach zamkniętych.
-        Zasady Formuły 1 regulowane są przez Fédération Internationale de
-        l’Automobile (FIA), której prezesem jest Mohammed Bin Sulayem. Za stronę
-        finansową i medialną Formuły 1 odpowiedzialna jest Liberty Media, której
-        przedstawicielami są Chase Carey, Ross Brawn i Sean Bratches.
-      </p>
+      <h1 class="container w-75">Formaty weekendów</h1>
+      <!--Dodanie formatów weekendów-->
+      <div class="container w-75">
+        <div class="row">
+          <div class="col-sm">
+            <div class="btn-group-vertical">
+              <button type="button" class="btn btn-primary btn-f1Sprint">
+                Formuła 1 z sprintu
+              </button>
+              <button type="button" class="btn btn-primary btn-f1Normal">
+                Formuła 1 bez sprintu
+              </button>
+              <button type="button" class="btn btn-primary btn-f2">
+                Formuła 2
+              </button>
+              <button type="button" class="btn btn-primary btn-f3">
+                Formuła 3
+              </button>
+            </div>
+          </div>
+          <div class="col-sm">
+            <h3>Piątek</h3>
+            <p class="piatek1"></p>
+            <p class="piatek2"></p>
+            <h3>Sobota</h3>
+            <p class="sobota1"></p>
+            <p class="sobota2"></p>
+            <h3>Niedziela</h3>
+            <p class="niedziela"></p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
