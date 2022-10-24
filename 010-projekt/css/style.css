@@ -1,0 +1,26 @@
+.backgroundImage
+{
+    background-position: center;
+    background-image: url(background.jpg);
+}
+
+.table-bordered td
+{
+    border: none !important;
+}
+
+.table-bordered tr
+{
+    border: none !important;
+}
+
+.btn
+{
+    border: none!important;
+    box-shadow: none!important;
+}
+
+.btn-link
+{
+    text-decoration: none!important;
+}
