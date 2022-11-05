@@ -1,0 +1,58 @@
+body
+{
+    background: #9f531c;
+    color: white;
+    font-family: Verdana;
+}
+
+.row
+{
+    display: flex;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card
+{
+    width: 60px;
+    height: 100px;
+    background: #e4792d;
+    border: 2px solid #ae622b;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 32px;
+    cursor: pointer;
+    transform: scale(-1, 1);
+    transition: all 0.2s;
+    margin: 5px;
+}
+
+.symbol
+{
+    /* opacity: 0; */
+    transition: all 0.2s;
+}
+
+.uncovered
+{
+    background: white;
+    transform: scale(1, 1);
+}
+
+.uncovered .symbol
+{
+    opacity: 1;
+}
+
+.destroyed
+{
+    transform:  scale(0, 0);
+    opacity: 0;
+}
+
