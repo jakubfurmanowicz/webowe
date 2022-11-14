@@ -1,0 +1,9 @@
+ng new nazwaProjektu
+
+npm install - otworzenie node moduls
+
+uruchomienie serwera i otwarcie przegladarki
+ng serve -o
+
+Przerwanie serwera 
+skrót Crtl + c

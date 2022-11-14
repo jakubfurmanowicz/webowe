@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: cornflowerblue;
+    font-weight: normal;
+}
+
+.flex {
+    display: flex;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 100px;
+}

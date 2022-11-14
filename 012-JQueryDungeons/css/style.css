@@ -1,0 +1,135 @@
+@font-face
+{
+    font-family: righteous;
+    src: url(../fonts/righteous.ttf);
+}
+
+body
+{
+    background: #2e2037;
+    margin: 0;
+    padding: 0;
+    font-family: righteous;
+    color: #e0dce7;
+    font-size: 20px;
+    text-align: center;
+}
+
+.row
+{
+    display: flex;
+}
+
+.col
+{
+    width: 50%;
+}
+
+footer
+{
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+h1
+{
+    font-weight: normal;
+}
+
+button
+{
+    border: none;
+    color: #2c2336;
+    background: #9398a6;
+    font-family: righteous;
+    padding: 8px 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover
+{
+    background: #cbcfd8;
+}
+
+.board
+{
+    width: 552px;
+    height: 640px;
+    margin: 0 auto;
+    background: url(../images/board.png);
+    box-sizing: border-box;
+    padding: 80px 0 0 16px;
+}
+
+.tile
+{
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.key
+{
+    background: url(../images/key.png);
+}
+
+.bat
+{
+    background: url(../images/bat.png);
+}
+
+.spider
+{
+    background: url(../images/spider.png);
+}
+
+.chest-closed
+{
+    background: url(../images/chestclosed.png);
+}
+
+.chest-open
+{
+    background: url(../images/chestopen.png);
+}
+
+.gem-red
+{
+    background: url(../images/gem-red.png);
+}
+
+.gem-green
+{
+    background: url(../images/gem-green.png);
+}
+
+.gem-blue
+{
+    background: url(../images/gem-blue.png);
+}
+
+.lever-closed
+{
+    background: url(../images/leverclosed.png);
+}
+
+.lever-open
+{
+    background: url(../images/leveropen.png);
+}
+
+.ghost
+{
+    background: url(../images/ghost.png);
+}
+
+.ghost-transparent
+{
+    background: url(../images/ghost-transparent.png);
+}
+
+.skeleton
+{
+    background: url(../images/skeleton.png);
+}
