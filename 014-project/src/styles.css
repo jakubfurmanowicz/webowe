@@ -24,7 +24,10 @@ body {
 }
 
 .sidebar img {
-    width: 50%;
+    margin: 5px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
 }
 
 footer {
@@ -33,7 +36,7 @@ footer {
 
 .content {
     text-align: center;
-    width: 1000px;
+    width: 600px;
     margin: 20px auto;
 }
 
@@ -69,4 +72,17 @@ footer {
 
 .active {
     color: var(--primary) !important;
+}
+
+code {
+    font-family: Consolas;
+    color: #405060;
+}
+
+pre {
+    text-align: start;
+}
+
+.content h1 {
+    text-align: center;
 }
