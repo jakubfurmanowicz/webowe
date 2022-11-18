@@ -1,0 +1,13 @@
+<h1>Binding</h1>
+<p>To powiązanie zmiennych z atrybutami HTML np: src obrazka, style, klasy</p>
+
+<h2>Binding źródła obrazów</h2>
+<!--Jedyny poprawy sposób, który zawsze będzie działać-->
+<img [src]="url" alt="">
+
+<h2>Binding styli</h2>
+
+<p [style.color]="warningColor">Napis ze sterowanym kolorem w Typescript</p>
+
+<h2>Binding klas</h2>
+<p [class.errorClass]="isError">Napis kontrolujący błędy</p>
