@@ -86,3 +86,12 @@ pre {
 .content h1 {
     text-align: center;
 }
+
+h1 {
+    color: #3080d0;
+    font-size: large;
+}
+
+h2 {
+    font-weight: bolder;
+}

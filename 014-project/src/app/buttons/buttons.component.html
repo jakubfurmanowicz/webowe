@@ -1,0 +1,18 @@
+<h1>Tworzenie interakcji</h1>
+<h2>Zmiana tekstu</h2>
+<pre>
+    Imię: {{name}}
+    Student: {{student ? "TAK" : "NIE"}}
+</pre>
+<button (click)="changeName()">Zmień imię</button>
+<button (click)="changeStudent()">Zmień status studenta</button>
+
+<h2>Tester błędów</h2>
+<img [src]="url" alt="" style="width: 50%;">
+<p [style.color]="errorColor">Testowanie błędów</p>
+<button (click)="changeError()">Zmień status błędu</button>
+
+<h2>Licznik</h2>
+<h2>{{counter}}</h2>
+<button (click)="counter = counter - 1">-</button>
+<button (click)="counter = counter + 1">+</button>

@@ -7,6 +7,7 @@ import { HelloComponent } from './hello/hello.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { ErrorComponent } from './error/error.component';
 import { BindingComponent } from './binding/binding.component';
+import { ButtonsComponent } from './buttons/buttons.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BindingComponent } from './binding/binding.component';
     HelloComponent,
     InterpolationComponent,
     ErrorComponent,
-    BindingComponent
+    BindingComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,
