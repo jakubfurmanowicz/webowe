@@ -16,3 +16,39 @@
 <h2>{{counter}}</h2>
 <button (click)="counter = counter - 1">-</button>
 <button (click)="counter = counter + 1">+</button>
+
+<h2>Przeglądarka ikon</h2>
+<button (click)="infoIcon()">Info</button>
+<button (click)="plusIcon()">Plus</button>
+<button (click)="alertIcon()">Alert</button>
+<button (click)="deleteIcon()">Delete</button> <br>
+
+<img [src]="iconImage" alt="" style="width: 25%;"><br>
+<h2>System zgłoszeń</h2>
+<div class="row">
+    <button [class.errorButton]="!firstStatus" (click)="changeFirstStatus()">Zgłoś</button>
+    <p>Status {{firstStatus ? "OK" : "zgłoszony"}}</p>
+</div>
+
+<div class="row">
+    <button [class.errorButton]="!secondStatus" (click)="changeSecondStatus()">Zgłoś</button>
+    <p>Status {{secondStatus ? "OK" : "zgłoszony"}}</p>
+</div>
+
+<div class="row">
+    <button [class.errorButton]="!thirdStatus" (click)="changeThirdStatus()">Zgłoś</button>
+    <p>Status {{thirdStatus ? "OK" : "zgłoszony"}}</p>
+</div>
+
+<div class="row">
+    <button [class.errorButton]="!fourthStatus" (click)="changeFourthStatus()">Zgłoś</button>
+    <p>Status {{fourthStatus ? "OK" : "zgłoszony"}}</p>
+</div>
+<button (click)="reset()">Resetuj zgłoszenie</button>
+
+<h2>Autostrada</h2>
+<button (click)="addCar()">🚗</button>
+<button (click)="addPoliceCar()">🚓</button>
+<button (click)="addRacingCar()">🏎️</button>
+<button (click)="addSuv()">🚙</button>
+<p>{{trafficJam}}</p>

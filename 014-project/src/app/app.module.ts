@@ -16,7 +16,7 @@ import { ButtonsComponent } from './buttons/buttons.component';
     InterpolationComponent,
     ErrorComponent,
     BindingComponent,
-    ButtonsComponent
+    ButtonsComponent,
   ],
   imports: [
     BrowserModule,
