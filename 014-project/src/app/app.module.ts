@@ -8,6 +8,8 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { ErrorComponent } from './error/error.component';
 import { BindingComponent } from './binding/binding.component';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { FormsComponent } from './forms/forms.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { ButtonsComponent } from './buttons/buttons.component';
     ErrorComponent,
     BindingComponent,
     ButtonsComponent,
+    FormsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

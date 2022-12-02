@@ -1,0 +1,57 @@
+<h1>Formularze i ngIfy</h1>
+<h2>Turniej</h2>
+
+<p>Automatycznie</p>
+<strong>{{team1}} vs {{team2}}</strong>
+
+<p>Pokliknięciu lub enter</p>
+<strong>{{team1clicked}} vs {{team2clicked}}</strong>
+<br>
+
+Team1:
+<input type="text" [(ngModel)]="team1" (keydown.enter)="changeTeams()">
+
+Team2:
+<input type="text" [(ngModel)]="team2" (keydown.enter)="changeTeams()">
+<br>
+<br>
+
+<button (click)="changeTeams()">Zmień</button>
+
+<h2>Owocki</h2>
+<div class="ball" [style.background]="fruit"></div>
+<select [(ngModel)]="fruit">
+    <option value="red">Apple</option>
+    <option value="yellow">Lemon</option>
+    <option value="crimson">Cherry</option>
+    <option value="purple">Plum</option>
+    <option value="green">Kiwi</option>
+</select>
+
+<h2>ngIf</h2>
+<input type="text" [(ngModel)]="nick"> <span *ngIf="!nick">* Pole wymagane</span>
+
+<h2>Egzamin</h2>
+Wynik teorii (50+):
+<input type="number" [(ngModel)]="teoria">
+<br>
+
+Wynik praktyki (75+):
+<input type="number" [(ngModel)]="praktyka">
+<br>
+
+<span *ngIf="praktyka >= 75 && teoria >= 50">Zdane</span>
+<span *ngIf="praktyka < 75 || teoria < 50">Niezdane</span>
+
+<h2>Checkbox</h2>
+<input type="checkbox" [(ngModel)]="showRules"> Pokaż regulamin
+
+<p *ngIf="showRules">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, quo sint? Illo itaque quibusdam quam
+    eveniet possimus
+    alias nemo. Deleniti vitae repellat nulla ullam nam corrupti architecto. Facere, dolorem dolores.</p>
+
+<h2>Radio buttons</h2>
+<div class="ball" [style.background]="bauble"></div>
+<input type="radio" names="baubles" value="red" [(ngModel)]="bauble">Czerwony<br>
+<input type="radio" names="baubles" value="crimson" [(ngModel)]="bauble">Zielony<br>
+<input type="radio" names="baubles" value="gold" [(ngModel)]="bauble">Złoty<br>
