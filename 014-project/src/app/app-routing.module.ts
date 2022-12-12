@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ArraysComponent } from './arrays/arrays.component';
 import { BindingComponent } from './binding/binding.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { ErrorComponent } from './error/error.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: "binding", component: BindingComponent },
   { path: "buttons", component: ButtonsComponent },
   { path: "forms", component: FormsComponent },
+  { path: "arrays", component: ArraysComponent },
   { path: "**", component: ErrorComponent },
 ];
 

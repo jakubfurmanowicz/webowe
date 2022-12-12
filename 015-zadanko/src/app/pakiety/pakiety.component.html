@@ -1,0 +1,36 @@
+<h1>Wybór opcji</h1>
+
+<h3>Wybierz swój pakiet</h3>
+<input type="radio" name="packages" value="lite" [(ngModel)]="option">3D Studio Lite <br>
+<input type="radio" name="packages" value="standart" [(ngModel)]="option">3D Studio Standard <br>
+<input type="radio" name="packages" value="premium" [(ngModel)]="option">3D Studio Premium <br>
+<h3>Szczegóły pakietu</h3>
+<div [ngSwitch]="option">
+    <div *ngSwitchCase=" 'lite' ">
+        <ul>
+            <li>Modelowanie 3D</li>
+            <li>Nakładanie tekstur</li>
+            <li>full HD</li>
+            <li>249zł</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase=" 'standart' ">
+        <ul>
+            <li>Animacje</li>
+            <li>Pluginy</li>
+            <li>Rendering 4K</li>
+            <li>499zł</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase=" 'premium' ">
+        <ul>
+            <li>Nieliniowa edycja animacji</li>
+            <li>Rigging postaci 3D</li>
+            <li>Pakiet zasobów</li>
+            <li>799zł</li>
+        </ul>
+    </div>
+    <div *ngSwitchDefault>
+        Najpierw wybierz opcję...
+    </div>
+</div>

@@ -10,6 +10,7 @@ import { BindingComponent } from './binding/binding.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormsModule } from '@angular/forms';
+import { ArraysComponent } from './arrays/arrays.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     BindingComponent,
     ButtonsComponent,
     FormsComponent,
+    ArraysComponent,
   ],
   imports: [
     BrowserModule,

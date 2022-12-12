@@ -27,8 +27,6 @@ export class FormsComponent implements OnInit {
     this.team2clicked = this.team2;
   }
 
-
-
   constructor() { }
 
   ngOnInit(): void {

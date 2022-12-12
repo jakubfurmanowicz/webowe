@@ -1,0 +1,25 @@
+<h1>Tablice i ngFory</h1>
+
+<h2>Lista imion:</h2>
+<ol>
+    <li *ngFor="let name of names">{{name}}</li>
+</ol>
+<h2>Usuwanie</h2>
+<button (click)="removeFirst()">Usuń pierwszy element</button>
+<button (click)="removeLast()">Usuń ostatni element</button>
+<button (click)="removeByIndex()">Usuń spod indexu</button>
+<input type="number" [(ngModel)]="numberOfIndex" placeholder="Wpisz numer">
+<br>
+<h2>Dodawanie</h2>
+<input type="text" [(ngModel)]="newItem">
+<button (click)="add()">Dodaj element</button>
+<span style="color: red;">{{errorCommunicate}}</span>
+<br>
+<br>
+<h2>Funkcje specjalne</h2>
+<button (click)="sort()">Sortuj tablicę</button>
+<button (click)="reverse()">Odwróć tablicę</button>
+<br>
+<input type="text" [(ngModel)]="search" placeholder="szukaj nazwy" (keyup)="filter()">
+<button (click)="filter()">Filtruj</button>
+<div *ngFor="let name of filteredNames">{{name}}</div>

@@ -1,0 +1,11 @@
+<h1>Walidacja danych</h1>
+
+Użytkownik: <br>
+<input type="text" [(ngModel)]="userName">
+<span *ngIf="!userName">❌</span>
+<span *ngIf="userName">✓</span>
+<br>
+Hasło: <br>
+<input type="password" [(ngModel)]="password">
+<span *ngIf="password.length >= 8">✓</span>
+<span *ngIf="password.length < 8">❌</span>

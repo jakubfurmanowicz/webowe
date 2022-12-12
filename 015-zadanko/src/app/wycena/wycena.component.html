@@ -1,0 +1,14 @@
+<h1>Wycena pakietu</h1>
+<p>Dopasuj swój pakiet renderingów 3D w chmurze:</p>
+<br>
+<p>Liczba renderingów statycznych Full HD (0.10zł)</p>
+<input type="text" [(ngModel)]="hdRendering">
+<br>
+<p>Liczba krótkich renderingów animacji do 5 minut (0.25zł)</p>
+<input type="text" [(ngModel)]="shortAnimationRendering">
+<br>
+<p>Liczba długich renderingów animacji do 25 minut (0.50zł)</p>
+<input type="text" [(ngModel)]="longAnimationRendering">
+<br>
+<button type="button" (click)="checkPrice()">Przelicz</button>
+<h3>Cena pakietu wynosi: {{finalPrice}}zł</h3>
