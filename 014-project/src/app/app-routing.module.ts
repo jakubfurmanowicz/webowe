@@ -7,6 +7,7 @@ import { ErrorComponent } from './error/error.component';
 import { FormsComponent } from './forms/forms.component';
 import { HelloComponent } from './hello/hello.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
+import { ObjectComponent } from './object/object.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/hello", pathMatch: "full" },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: "buttons", component: ButtonsComponent },
   { path: "forms", component: FormsComponent },
   { path: "arrays", component: ArraysComponent },
+  { path: "object", component: ObjectComponent },
   { path: "**", component: ErrorComponent },
 ];
 

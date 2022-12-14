@@ -123,4 +123,10 @@ button {
     border-radius: 10%;
 }
 
-button:hover {}
+.frame {
+    margin: 20px 0;
+    padding: 20px;
+    background: var(--light);
+    border: 1px solid var(--light-shade);
+    border-radius: 10px;
+}

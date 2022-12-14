@@ -1,0 +1,37 @@
+<h1>Obiekty</h1>
+
+<h2>Prosty obiekt</h2>
+<pre>
+    Imię: {{alex.firstName}}
+    Nazwisko: {{alex.lastName}}
+    Wiek: {{alex.age}}
+
+    JSON: {{getJson()}}
+
+    Imię: {{bob.firstName}}
+    Nazwisko: {{bob.lastName}}
+    Wiek: {{bob.age}}
+</pre>
+
+<h2>Obiekty z interfejsów</h2>
+<pre>
+    Utworzenie interfejsu (w foldorze models):
+    <code>ng g i nazwa</code>
+</pre>
+
+<div class="frame" *ngFor="let student of students">
+    <h4>{{student.firstName}} {{student.lastName}}</h4>
+    <p>Wiek: {{student.age}}</p>
+    <p>Średnia ocen: {{student.avarage}}</p>
+    <p>{{student.isLeader ? "Przewodniczący" : ""}}</p>
+</div>
+
+<p>{{getStudentsJson()}}</p>
+
+<div class="frame" *ngFor="let teacher of teachers">
+    <h4>{{teacher.firstName}} {{teacher.lastName}}</h4>
+    <p>Wiek: {{teacher.role}}</p>
+    <p>Przedmiot: {{teacher.subjects}}</p>
+    <p>Sala: {{teacher.room}}</p>
+</div>
+<p>{{getTeacherJson()}}</p>

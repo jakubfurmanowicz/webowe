@@ -11,6 +11,7 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormsModule } from '@angular/forms';
 import { ArraysComponent } from './arrays/arrays.component';
+import { ObjectComponent } from './object/object.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ArraysComponent } from './arrays/arrays.component';
     ButtonsComponent,
     FormsComponent,
     ArraysComponent,
+    ObjectComponent,
   ],
   imports: [
     BrowserModule,
