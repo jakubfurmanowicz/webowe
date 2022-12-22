@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(75, 174, 255);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainPage {
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.item {
+    background-color: rgb(231, 235, 238);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    color: black;
+    display: flex;
+}
+
+.item img {
+    width: 15%;
+    padding-right: 15px;
+}
+
+input {
+    background-color: rgb(60, 142, 209);
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    margin: 0 auto;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
