@@ -10,6 +10,10 @@ export class AppComponent {
   title = '016-toDo';
   newTask: string = "";
 
+  constructor() {
+    this.load();
+  }
+
   tasks: Task[] =
     [
       {
@@ -41,10 +45,13 @@ export class AppComponent {
       }
     );
     this.newTask = "";
+
+    this.save();
   }
 
   removeDone() {
     this.tasks = this.tasks.filter(task => !task.isDone);
+    this.save();
   }
 
   save() {

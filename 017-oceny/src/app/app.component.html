@@ -1,0 +1,14 @@
+<h1>Edytor ocen</h1>
+<div class="container">
+  <div class="row">
+    <h3>Nazwa przedmiotu</h3>
+    <h3>Ocena</h3>
+    <h3>Obowiązkowy</h3>
+  </div>
+  <div class="row" *ngFor="let grade of grades">
+    <input type="text" [(ngModel)]="grade.subjectName">
+    <input type="number" [(ngModel)]="grade.grade" (keyup)="calculate()">
+    <input type="checkbox" [(ngModel)]="grade.obligatory">
+  </div>
+  <h3>Średnia ocen: {{result}}</h3>
+</div>

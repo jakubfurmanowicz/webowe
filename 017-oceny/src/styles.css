@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.container {
+    background-color: white;
+    margin: 0 auto;
+    width: 30%;
+    padding: 8px;
+}
+
+.row {
+    display: flex;
+}
+
+input,
+h3 {
+    margin-right: 5;
+}
+
+.warn {
+    background-color: red;
+    color: black;
+}

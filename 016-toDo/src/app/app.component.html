@@ -2,8 +2,8 @@
 
     <h1>My To-DO List App</h1>
     <div class="item" *ngFor="let task of tasks">
-        <img src="assets/checkboxv2.png" alt="nie działa" *ngIf="!task.isDone" (click)="task.isDone=true">
-        <img src="assets/checkboxv1.png" alt="nie działa" *ngIf="task.isDone" (click)="task.isDone=false">
+        <img src="assets/checkboxv2.png" alt="nie działa" *ngIf="!task.isDone" (click)="task.isDone=true; this.save()">
+        <img src="assets/checkboxv1.png" alt="nie działa" *ngIf="task.isDone" (click)="task.isDone=false" this.save()>
         <p>{{task.description}}</p>
     </div>
     <div class="newItem">
