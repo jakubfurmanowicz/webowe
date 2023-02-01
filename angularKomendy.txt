@@ -11,3 +11,9 @@ skrót Crtl + c
 Tworzenie komponentu
 ng generate component nazwa
 ng g c nazwa
+
+Tworzenie modelu
+
+
+Tworzenie serwisu
+ng g s service/article
