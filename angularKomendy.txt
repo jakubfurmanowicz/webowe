@@ -13,7 +13,7 @@ ng generate component nazwa
 ng g c nazwa
 
 Tworzenie modelu
-
+ng g i models/nazwa
 
 Tworzenie serwisu
 ng g s service/article

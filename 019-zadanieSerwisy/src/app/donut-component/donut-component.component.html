@@ -1,0 +1,8 @@
+<h1>Pączkomat</h1>
+<div class="row">
+    <div class="item" *ngFor="let donut of donuts">
+        <h2>{{donut.name}}</h2>
+        <img [src]="donut.url">
+        <h4>{{donut.price}} zł</h4>
+    </div>
+</div>
