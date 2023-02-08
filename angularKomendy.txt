@@ -16,4 +16,7 @@ Tworzenie modelu
 ng g i models/nazwa
 
 Tworzenie serwisu
-ng g s service/article
+ng g s services/article
+
+Instalacja json server
+npm install json-sever // dla projektu

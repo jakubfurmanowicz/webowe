@@ -36,7 +36,8 @@ export class ObjectComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  students: Student[] = [
+  students: Student[] = 
+  [
     {
       firstName: "Alex",
       lastName: "Andrew",

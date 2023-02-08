@@ -1,0 +1,37 @@
+{
+    "students":
+    [
+        {
+            "id": 1,
+            "firstName": "Alex",
+            "lastName": "Andrew",
+            "age": 15,
+            "avarage": 4.75,
+            "isLeader": true
+        },
+        {
+            "id": 2,
+            "firstName": "Benjamin",
+            "lastName": "Bronx",
+            "age": 15,
+            "avarage": 4.5,
+            "isLeader": false
+        },
+        {
+            "id": 3,
+            "firstName": "Casey",
+            "lastName": "Lindenmayer",
+            "age": 16,
+            "avarage": 5,
+            "isLeader": false
+        },
+        {
+            "id": 4,
+            "firstName": "Marshal",
+            "lastName": "Matters",
+            "age": 16,
+            "avarage": 5.1,
+            "isLeader": false
+        }
+    ]
+}

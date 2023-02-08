@@ -8,6 +8,7 @@ import { FormsComponent } from './forms/forms.component';
 import { HelloComponent } from './hello/hello.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { ObjectComponent } from './object/object.component';
+import { WebstudentsComponent } from './webstudents/webstudents.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/hello", pathMatch: "full" },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: "forms", component: FormsComponent },
   { path: "arrays", component: ArraysComponent },
   { path: "object", component: ObjectComponent },
+  { path: "webstudents", component: WebstudentsComponent },
   { path: "**", component: ErrorComponent },
 ];
 

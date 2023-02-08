@@ -10,8 +10,10 @@ import { BindingComponent } from './binding/binding.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { ArraysComponent } from './arrays/arrays.component';
 import { ObjectComponent } from './object/object.component';
+import { WebstudentsComponent } from './webstudents/webstudents.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { ObjectComponent } from './object/object.component';
     FormsComponent,
     ArraysComponent,
     ObjectComponent,
+    WebstudentsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
