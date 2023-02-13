@@ -19,4 +19,7 @@ Tworzenie serwisu
 ng g s services/article
 
 Instalacja json server
-npm install json-sever // dla projektu
+npm install json-server // dla projektu
+
+Uruchomienie json server(utworzyć folder json i plik z rozszerzeniem .json)
+./node_modules/.bin\json-server .\src\app\json\student.json
