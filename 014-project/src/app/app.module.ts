@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ArraysComponent } from './arrays/arrays.component';
 import { ObjectComponent } from './object/object.component';
 import { WebstudentsComponent } from './webstudents/webstudents.component';
+import { GoldenQuotesComponent } from './golden-quotes/golden-quotes.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { WebstudentsComponent } from './webstudents/webstudents.component';
     ArraysComponent,
     ObjectComponent,
     WebstudentsComponent,
+    GoldenQuotesComponent,
   ],
   imports: [
     BrowserModule,

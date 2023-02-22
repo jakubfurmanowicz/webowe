@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="sidebar"></div>
+  <div class="content">
+    <h1>Układ okresowy</h1>
+    <div class="table">
+      <div class="item" 
+      *ngFor="let element of elements"
+      [style.left]="element.xpos * 5 + '%'"
+      [style.top]="element.ypos * 50 + 'px'"
+      >
+      <div class="symbol">
+        {{element.symbol}}
+      </div>
+        {{element.name}}
+      </div>
+    </div>
+  </div>
+</div>

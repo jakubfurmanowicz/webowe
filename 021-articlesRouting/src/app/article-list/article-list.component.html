@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="item" *ngFor="let article of articles">
+        <h2>{{article.title}}</h2>
+        <h4>{{article.date}}</h4>
+        <p>{{article.content}}</p>
+        <a [routerLink]="'article/' + article.id">Czytaj</a>
+        <img [src]="article.imageUrl">
+    </div>
+</div>

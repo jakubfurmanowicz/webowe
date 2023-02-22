@@ -1,0 +1,7 @@
+<div class="full-article" *ngIf="article">
+    <h2>{{article.title}}</h2>
+    <h4>{{article.date}}</h4>
+    <p>{{article.content}}</p>
+    <img [src]="article.imageUrl">
+    <a [routerLink]="''">Powrót</a>
+</div>

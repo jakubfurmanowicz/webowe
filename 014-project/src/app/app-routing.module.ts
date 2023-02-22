@@ -5,6 +5,7 @@ import { BindingComponent } from './binding/binding.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { ErrorComponent } from './error/error.component';
 import { FormsComponent } from './forms/forms.component';
+import { GoldenQuotesComponent } from './golden-quotes/golden-quotes.component';
 import { HelloComponent } from './hello/hello.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { ObjectComponent } from './object/object.component';
@@ -21,6 +22,8 @@ const routes: Routes = [
   { path: "arrays", component: ArraysComponent },
   { path: "object", component: ObjectComponent },
   { path: "webstudents", component: WebstudentsComponent },
+  { path: "golden-quotes", component: GoldenQuotesComponent },
+  { path: "golden-quotes/:id", component: GoldenQuotesComponent },
   { path: "**", component: ErrorComponent },
 ];
 
