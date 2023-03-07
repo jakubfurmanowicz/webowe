@@ -1,12 +1,18 @@
 <div class="row">
-  <div class="sidebar"></div>
+  <div class="sidebar" *ngIf="current">
+    <h1>{{current.symbol}}</h1>
+    <h3>{{current.name}}</h3>
+    <p>{{current.summary}}</p>
+    <img [src]="current.image.url" alt="">
+  </div>
   <div class="content">
     <h1>Układ okresowy</h1>
     <div class="table">
       <div class="item" 
       *ngFor="let element of elements"
       [style.left]="element.xpos * 5 + '%'"
-      [style.top]="element.ypos * 50 + 'px'"
+      [style.top]="element.ypos * 30 + 'px'"
+      (click)="current = element"
       >
       <div class="symbol">
         {{element.symbol}}

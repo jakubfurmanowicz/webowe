@@ -11,9 +11,13 @@ export class AppComponent {
   title = '022-chemia';
 
   elements: ChemicalElement[] = [];
+  current?: ChemicalElement;
 
   constructor(private service: ChemicalElementService)
   {
-    service.getElement().subscribe(data => this.elements = data);
+    service.getElement().subscribe(data => {
+      this.elements = data;
+      this.current = this.elements[0];
+    });
   }
 }
