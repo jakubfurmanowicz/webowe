@@ -1,11 +1,16 @@
 <div class="container">
     <h1>Weather app</h1>
-    <div class="item">
-        <p class="temperature">{{temperature}}°C</p> 
-        <h2>{{name}}</h2>
-        Latitude: {{lat}} <br>
-        Longtitude: {{lon}} <br>
-        Humidity: {{humidity}}%
+    <div class="row">
+        <div class="item">
+            <input type="text" [(ngModel)]="cityName">
+            <button (click)="change()">Wyszukaj miasto</button>
+            <p class="temperature">{{temperature}}°C</p> 
+            <h2>{{name}}</h2>
+        </div>
+        <div class="item">
+            <h2>Latitude: {{lat}}</h2>
+            <h2>Longtitude: {{lon}}</h2>
+            <h2>Humidity: {{humidity}}%</h2>
+        </div>
     </div>
-
 </div>
