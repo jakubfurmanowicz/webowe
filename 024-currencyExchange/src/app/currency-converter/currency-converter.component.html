@@ -3,36 +3,37 @@
         <h1>Currency Converter</h1>
         <div class="item-container">
             <p>Enter Amount</p> 
-            <input type="number">
+            <input type="number" [(ngModel)]="value">
             <div class="row">
                 <div class="chooseCurrency">
                     <p>From</p>
-                    <select>
-                        <option value="">PLN</option>
-                        <option value="">USD</option>
-                        <option value="">EUR</option>
-                        <option value="">CHF</option>
-                        <option value="">ARS</option>
-                        <option value="">BGN</option>
-                        <option value="">CZK</option>
-                        <option value="">DKK</option>
+                    <select [(ngModel)]="firstCurrency">
+                        <option value="PLN">PLN</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="CHF">CHF</option>
+                        <option value="ARS">ARS</option>
+                        <option value="BGN">BGN</option>
+                        <option value="CZK">CZK</option>
+                        <option value="DKK">DKK</option>
                     </select>
                 </div>
                 <div class="chooseCurrency" style="margin-left: 30%;">
-                    <p>From</p>
-                    <select>
-                        <option value="">EUR</option>
-                        <option value="">USD</option>
-                        <option value="">PLN</option>
-                        <option value="">CHF</option>
-                        <option value="">ARS</option>
-                        <option value="">BGN</option>
-                        <option value="">CZK</option>
-                        <option value="">DKK</option>
+                    <p>To</p>
+                    <select [(ngModel)]="secondCurrency">
+                        <option value="EUR">EUR</option>
+                        <option value="USD">USD</option>
+                        <option value="PLN">PLN</option>
+                        <option value="CHF">CHF</option>
+                        <option value="ARS">ARS</option>
+                        <option value="BGN">BGN</option>
+                        <option value="CZK">CZK</option>
+                        <option value="DKK">DKK</option>
                     </select>
                 </div>
             </div>
-            
+            <button (click)="convertCurrency()">Convert</button>
+            <p>{{result}}</p>
         </div>
     </div>
 </div>

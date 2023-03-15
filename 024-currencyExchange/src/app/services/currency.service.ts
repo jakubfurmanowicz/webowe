@@ -8,8 +8,8 @@ export class CurrencyService {
 
   constructor(private http: HttpClient) { }
 
-  getCurrency()
+  getCurrency(from:string, to:string)
   {
-    
+    return this.http.get<any>(`https://api.exchangerate.host/convert?from=${from}&to=${to}`);
   }
 }

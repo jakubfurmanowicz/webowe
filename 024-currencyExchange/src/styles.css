@@ -53,6 +53,14 @@ body
 select
 {
     margin-top: 10px;
+    color: black;
+}
+
+select:focus
+{
+    border: 1px solid black;
+    outline: none !important;
+    border-radius: 3px;
 }
 
 input
@@ -69,4 +77,27 @@ input:focus
     border: 2px solid black;
     outline: none !important;
     border-radius: 3px;
+}
+
+button
+{
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: whitesmoke;
+    background-color: #981bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+p
+{
+    font-size: 20px;
+    text-align: center;
 }
