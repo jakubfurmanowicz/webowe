@@ -3,7 +3,8 @@
         <h1>Currency Converter</h1>
         <div class="item-container">
             <p>Enter Amount</p> 
-            <input type="number" [(ngModel)]="value">
+            <input type="number" min="0" [(ngModel)]="value">
+            <span *ngIf="!value || value < 0">*Required field or incorrect value</span>
             <div class="row">
                 <div class="chooseCurrency">
                     <p>From</p>
@@ -21,9 +22,9 @@
                 <div class="chooseCurrency" style="margin-left: 30%;">
                     <p>To</p>
                     <select [(ngModel)]="secondCurrency">
-                        <option value="EUR">EUR</option>
-                        <option value="USD">USD</option>
                         <option value="PLN">PLN</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
                         <option value="CHF">CHF</option>
                         <option value="ARS">ARS</option>
                         <option value="BGN">BGN</option>

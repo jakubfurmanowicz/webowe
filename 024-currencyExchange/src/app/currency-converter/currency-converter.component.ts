@@ -12,14 +12,17 @@ export class CurrencyConverterComponent implements OnInit {
 
   value: number = 1;
   result: number = 0;
-  firstCurrency: string = "";
-  secondCurrency: string = "";
+  temp: number = 0;
+  firstCurrency: string = "PLN";
+  secondCurrency: string = "EUR";
 
   convertCurrency()
   {
     this.service.getCurrency(this.firstCurrency, this.secondCurrency).subscribe(data => {
-      this.result = (this.value * data.info.rate);
+      this.temp = (this.value * data.info.rate);
+      this.result = Math.round(this.temp * 100) / 100;
       //console.log(this.value);
+      console.log(this.temp);
       console.log(this.result);
     });
   }
