@@ -24,7 +24,7 @@ npm install json-server // dla projektu
 Uruchomienie json server(utworzyć folder json i plik z rozszerzeniem .json)
 ./node_modules/.bin\json-server .\src\app\json\student.json
 
-Http import modułu
+Http import modułu // dodać do app.module.ts
 import {HttpClientModule} from '@angular/common/http'
 
 Pobranie miasta(weatherApi)
