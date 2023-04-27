@@ -12,7 +12,7 @@ Tworzenie komponentu
 ng generate component nazwa
 ng g c nazwa
 
-Tworzenie modelu
+Tworzenie modelu/interfejsu
 ng g i models/nazwa
 
 Tworzenie serwisu
@@ -27,8 +27,8 @@ Uruchomienie json server(utworzyć folder json i plik z rozszerzeniem .json)
 Http import modułu
 import {HttpClientModule} from '@angular/common/http'
 
-Pobranie miasta
+Pobranie miasta(weatherApi)
 https://api.openweathermap.org/geo/1.0/direct?q=londyn&limit=1&appid=1c3a0b4b442ce2bf296201d762f58ba1
 
-Pobieranie danych o pogodzie
+Pobieranie danych o pogodzie(weatherApi)
 https://api.openweathermap.org/data/2.5/weather?lat=15&lon=15&appid=1c3a0b4b442ce2bf296201d762f58ba1
